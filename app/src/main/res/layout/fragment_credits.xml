@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    android:background="#00BCD4"
+    android:background="#e6e6fa"
     tools:context=".CreditsFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,7 +13,7 @@
         android:id="@+id/developed_by"
         android:layout_width="match_parent"
         android:layout_height="172dp"
-        android:background="#00BCD4"
+        android:background="#e6e6fa"
         android:src="@drawable/develpoed_by">
 
     </ImageView>
@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center|center_horizontal"
         android:text="IIT,JAHANGIRNAGAR UNIVERSITY"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textStyle="normal" >
     </TextView>
 
@@ -33,7 +33,7 @@
         android:layout_width="416dp"
         android:layout_height="312dp"
         android:layout_gravity="center_vertical"
-        android:background="#00BCD4"
+        android:background="#e6e6fa"
 
        >
 
@@ -48,7 +48,7 @@
                 android:textSize="16dp"
                 android:text="1. MD. ABU ZEHAD FOYSAL
                      ID: 231111"
-                android:textColor="@color/white"
+                android:textColor="#008db9"
                 android:textStyle="bold|normal"
                 />
         </TableRow>
@@ -64,7 +64,7 @@
                 android:textSize="16dp"
                 android:text="2. MAHMUDUR RAHMAN
                          ID: 231141"
-                android:textColor="@color/white"
+                android:textColor="#008db9"
                 android:textStyle="bold|normal" />
         </TableRow>
 
@@ -79,8 +79,8 @@
                 android:layout_height="53dp"
                 android:textSize="16dp"
                 android:text="3. ABDUL HALIM
-                                        ID: 231113"
-                android:textColor="@color/white"
+                                         ID: 231113"
+                android:textColor="#008db9"
                 android:textStyle="bold|normal" />" />
         </TableRow>
 
@@ -95,8 +95,8 @@
                 android:layout_height="53dp"
                 android:textSize="16dp"
                 android:text="4. FATIMA ANAN KANOK
-                         ID: 231117"
-                android:textColor="@color/white"
+                          ID: 231117"
+                android:textColor="#008db9"
                 android:textStyle="bold|normal" />" />
         </TableRow>
 
@@ -111,8 +111,8 @@
                 android:layout_height="53dp"
                 android:textSize="16dp"
                 android:text="5. AFIFA JAHAN
-                                         ID: 231114"
-                android:textColor="@color/white"
+                                          ID: 231114"
+                android:textColor="#008db9"
                 android:textStyle="bold|normal" />" />
         </TableRow>
 
@@ -126,8 +126,8 @@
                 android:layout_height="53dp"
                 android:textSize="16dp"
                 android:text="6. AFIFA HAQUE
-                                         ID: 231125"
-                android:textColor="@color/white"
+                                          ID: 231125"
+                android:textColor="#008db9"
                 android:textStyle="bold|normal" />" />
         </TableRow>
 

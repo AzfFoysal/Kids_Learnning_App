@@ -17,10 +17,7 @@
         android:ems="20"
         android:gravity="center_vertical|center_horizontal"
         android:justificationMode="inter_word"
-        android:text="This is an educational application developed for kids to help them learn english alphabets along with its examples.
-With interactive alphabet app for young children encouraging them to learn alphabets. This app can be used by children who are
-just beginning to understand letters and sounds. It is a colorful app that helps kids learn English alphabets and build their vocabulary through interactive screen. This alphabet app will teach kids as young as 1-year-olds. They can learn ABCs through a tap-and-touch experience.
-This app is aligned to the Kindergarten Reading Foundational Skills in the Common Core Standards.
+        android:text="Kids Learning App is an educational application developed for kids to help them learn English alphabets along with its examples. With this interactive alphabet app for young children encouraging them to learn alphabets. This app can be used by children who are just beginning to understand letters. It is a colorful app that helps kids learn English alphabets and build their vocabulary through interactive screens. This alphabet app will teach kids as young as 1-year-olds. They can learn ABCs through a tap-and-touch experience. This app is aligned to the Kindergarten Reading Foundational Skills in the Common Core Standards.
 \n
 \n
 Ages: 3+    Devices: Android Phone" />

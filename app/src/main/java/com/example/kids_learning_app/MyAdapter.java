@@ -17,9 +17,9 @@ public class MyAdapter extends FragmentStateAdapter {
             case 0:
                 return new AlphabetFragment();
             case 1:
-                return new DetailsFragment();
+                return new BanglaAlphaFragment();
             case 2:
-                return new CreditsFragment();
+                return new DetailsFragment();
         }
 
         return new AlphabetFragment();

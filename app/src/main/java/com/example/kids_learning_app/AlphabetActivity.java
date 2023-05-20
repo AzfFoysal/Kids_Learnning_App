@@ -2,11 +2,13 @@ package com.example.kids_learning_app;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class AlphabetActivity extends AppCompatActivity {
+
+    private Bundle savedInstanceState;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

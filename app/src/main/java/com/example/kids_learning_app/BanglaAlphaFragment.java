@@ -65,23 +65,20 @@ public class BanglaAlphaFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_alphabet, container, false);
 
-        String alpha[] = new String[14];
-        for(int i=0, j=2437;i<14;i++,j++)
+        String[] alpha = new String[65];
+        for(int i=0, j=2437;i<65;i++,j++)
         {
             alpha[i] = Character.toString((char)j);
         }
 
         GridView gv = v.findViewById(R.id.gridview1);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1,alpha);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_expandable_list_item_1, alpha);
         gv.setAdapter(adapter);
 
-        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                Intent i1 = new Intent(getContext(), AlphabetActivity.class);
-                i1.putExtra("name",alpha[position]);
-                startActivity(i1);
-            }
+        gv.setOnItemClickListener((adapterView, view, position, l) -> {
+            Intent i1 = new Intent(getContext(), AlphabetActivity.class);
+            i1.putExtra("name",alpha[position]);
+            startActivity(i1);
         });
         return v;
     }

@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#e6e6fa"
-    tools:context=".AlphabetActivity">
+    tools:context=".BanglaAlphabetActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="327dp"
         android:layout_height="554dp"
         android:layout_marginStart="32dp"
@@ -16,7 +16,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_launcher_background" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-

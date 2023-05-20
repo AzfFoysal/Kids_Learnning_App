@@ -27,13 +27,13 @@
         android:layout_gravity="bottom|center|center_horizontal"
         android:text="IIT,JAHANGIRNAGAR UNIVERSITY"
         android:textColor="@color/black"
-        android:textSize="10dp"
+        android:textSize="8dp"
         android:textStyle="normal"
         tools:ignore="TextSizeCheck"></TextView>
 
     <TableLayout
         android:layout_width="236dp"
-        android:layout_height="94dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_vertical |center_horizontal"
         android:background="#e6e6fa"
 

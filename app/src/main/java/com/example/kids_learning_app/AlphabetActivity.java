@@ -3,6 +3,7 @@ package com.example.kids_learning_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -22,5 +23,9 @@ public class AlphabetActivity extends AppCompatActivity {
         iv.setImageResource(iid);
 
         /*Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();*/
+
+        int mid = getResources().getIdentifier(name, "raw",getPackageName());
+        MediaPlayer mp = MediaPlayer.create(getApplicationContext(), mid);
+        mp.start();
     }
 }

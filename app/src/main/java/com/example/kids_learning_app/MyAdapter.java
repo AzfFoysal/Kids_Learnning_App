@@ -15,14 +15,14 @@ public class MyAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 0:
-                return new AlphabetFragment();
-            case 1:
                 return new BanglaAlphaFragment();
+            case 1:
+                return new AlphabetFragment();
             case 2:
                 return new DetailsFragment();
         }
 
-        return new AlphabetFragment();
+        return new BanglaAlphaFragment();
     }
 
     @Override

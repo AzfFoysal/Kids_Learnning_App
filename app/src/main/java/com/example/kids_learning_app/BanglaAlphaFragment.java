@@ -31,6 +31,7 @@ public class BanglaAlphaFragment extends Fragment {
     private String mParam2;
     private Button button;
     private Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11;
+
     public BanglaAlphaFragment() {
         // Required empty public constructor
     }
@@ -68,97 +69,20 @@ public class BanglaAlphaFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_bangla_alpha, container, false);
 
-        button1 = (android.widget.Button) v.findViewById(R.id.button1);
-        button1.setOnClickListener(new View.OnClickListener() {
+        String alpha[] = {"অ", "আ", "ই", "ঈ", "উ", "ঊ", "ঋ", "এ", "ঐ", "ও", "ঔ"};
+        GridView gv = v.findViewById(R.id.gridview1);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1, alpha);
+        gv.setAdapter(adapter);
+
+        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                Intent il = new Intent(getContext(), BanglaAlphabetActivity.class);
+                il.putExtra("name", alpha[position]);
+                startActivity(il);
             }
         });
-
-        button2 = (android.widget.Button) v.findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
-
-        button3 = (android.widget.Button) v.findViewById(R.id.button3);
-        button3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
-        button4 = (android.widget.Button) v.findViewById(R.id.button4);
-        button4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
-        button5 = (android.widget.Button) v.findViewById(R.id.button5);
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
-        button6 = (android.widget.Button) v.findViewById(R.id.button6);
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
-        button7 = (android.widget.Button) v.findViewById(R.id.button7);
-        button7.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
-        button8 = (android.widget.Button) v.findViewById(R.id.button8);
-        button8.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
-        button9 = (android.widget.Button) v.findViewById(R.id.button9);
-        button9.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
-        button10 = (android.widget.Button) v.findViewById(R.id.button10);
-        button10.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
-        button11 = (android.widget.Button) v.findViewById(R.id.button11);
-        button11.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
-            }
-        });
-
 
         return v;
     }
-
 }

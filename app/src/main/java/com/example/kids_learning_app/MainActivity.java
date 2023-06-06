@@ -16,7 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity {
-    String tabTitle[] = {"English Alphabets","Bangla Alphabets","Details"};
+    String tabTitle[] = {"Bangla Alphabets","English Alphabets","Details"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -9,15 +9,37 @@
 
     <!-- TODO: Update blank fragment layout -->
 
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="31dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginStart="170dp"-->
+<!--        android:layout_marginTop="18dp"-->
+<!--        android:text="Soroborno" />-->
 
     <GridView
         android:id="@+id/gridview1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="3"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="10dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:numColumns="3" />
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginStart="183dp"-->
+<!--        android:layout_marginTop="291dp"-->
+<!--        android:text="Benjon" />-->
+
 </RelativeLayout>

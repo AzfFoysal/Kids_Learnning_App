@@ -13,7 +13,7 @@
     <ImageView
         android:id="@+id/developed_by"
         android:layout_width="181dp"
-        android:layout_height="98dp"
+        android:layout_height="125dp"
         android:layout_gravity="center_horizontal"
         android:background="#e6e6fa"
         android:src="@drawable/develpoed_by">
@@ -24,122 +24,123 @@
         android:id="@+id/credit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center|center_horizontal"
+        android:layout_gravity="center|bottom"
         android:text="IIT,JAHANGIRNAGAR UNIVERSITY"
         android:textColor="@color/black"
-        android:textSize="8dp"
+        android:textSize="9dp"
         android:textStyle="normal"
         tools:ignore="TextSizeCheck"></TextView>
 
     <TableLayout
         android:layout_width="236dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical |center_horizontal"
+        android:layout_gravity="center_horizontal"
         android:background="#e6e6fa"
 
         >
 
         <TableRow
-            android:layout_width="match_parent"
+            android:layout_width="172dp"
             android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/TextView"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="1. MD. ABU ZEHAD FOYSAL
-                     ID: 231111"
-                android:textColor="#008db9"
-                android:textSize="10dp"
-                android:textStyle="bold|normal"
-                tools:ignore="TextSizeCheck" />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
 
-            <TextView
-                android:id="@+id/TextView1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="2. MAHMUDUR RAHMAN
-                         ID: 231141"
-                android:textColor="#008db9"
-                android:textSize="10dp"
-                android:textStyle="bold|normal"
-                tools:ignore="TextSizeCheck" />
-        </TableRow>
-
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="ExtraText">
-
-            <TextView
-                android:id="@+id/TextView2"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="3. ABDUL HALIM
-                                         ID: 231113"
-                android:textColor="#008db9"
-                android:textSize="10dp"
-                android:textStyle="bold|normal"
-                tools:ignore="TextSizeCheck" />" />
-        </TableRow>
+<!--            <TextView-->
+<!--                android:id="@+id/TextView1"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="2. MAHMUDUR RAHMAN-->
+<!--                         ID: 231141"-->
+<!--                android:textColor="#008db9"-->
+<!--                android:textSize="10dp"-->
+<!--                android:textStyle="bold|normal"-->
+<!--                tools:ignore="TextSizeCheck" />-->
+<!--        </TableRow>-->
 
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:ignore="ExtraText">-->
 
-            <TextView
-                android:id="@+id/TextView3"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="4. FATIMA ANAN KANOK
-                          ID: 231117"
-                android:textColor="#008db9"
-                android:textSize="10dp"
-                android:textStyle="bold|normal"
-                tools:ignore="TextSizeCheck" />" />
-        </TableRow>
+<!--            <TextView-->
+<!--                android:id="@+id/TextView2"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="3. ABDUL HALIM-->
+<!--                                         ID: 231113"-->
+<!--                android:textColor="#008db9"-->
+<!--                android:textSize="10dp"-->
+<!--                android:textStyle="bold|normal"-->
+<!--                tools:ignore="TextSizeCheck" />" />-->
+<!--        </TableRow>-->
 
 
-        <TableRow
-            android:layout_width="352dp"
-            android:layout_height="match_parent">
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
 
-            <TextView
-                android:id="@+id/TextView4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="5. AFIFA JAHAN
-                                          ID: 231114"
-                android:textColor="#008db9"
-                android:textSize="10dp"
-                android:textStyle="bold|normal"
-                tools:ignore="TextSizeCheck" />" />
-        </TableRow>
+<!--            <TextView-->
+<!--                android:id="@+id/TextView3"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="4. FATIMA ANAN KANOK-->
+<!--                          ID: 231117"-->
+<!--                android:textColor="#008db9"-->
+<!--                android:textSize="10dp"-->
+<!--                android:textStyle="bold|normal"-->
+<!--                tools:ignore="TextSizeCheck" />" />-->
+<!--        </TableRow>-->
 
-        <TableRow
-            android:layout_width="406dp"
-            android:layout_height="wrap_content">
 
-            <TextView
-                android:id="@+id/TextView5"
-                android:layout_width="401dp"
-                android:layout_height="match_parent"
-                android:text="6. AFIFA HAQUE
-                                          ID: 231125"
-                android:textColor="#008db9"
-                android:textSize="10dp"
-                android:textStyle="bold|normal"
-                tools:ignore="TextSizeCheck" />" />
-        </TableRow>
+<!--        <TableRow-->
+<!--            android:layout_width="352dp"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/TextView4"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="5. AFIFA JAHAN-->
+<!--                                          ID: 231114"-->
+<!--                android:textColor="#008db9"-->
+<!--                android:textSize="10dp"-->
+<!--                android:textStyle="bold|normal"-->
+<!--                tools:ignore="TextSizeCheck" />" />-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="406dp"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/TextView5"-->
+<!--                android:layout_width="401dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:text="6. AFIFA HAQUE-->
+<!--                                          ID: 231125"-->
+<!--                android:textColor="#008db9"-->
+<!--                android:textSize="10dp"-->
+<!--                android:textStyle="bold|normal"-->
+<!--                tools:ignore="TextSizeCheck" />" />-->
+<!--        </TableRow>-->
 
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_gravity="center|bottom"
+        android:text="MD. ABU ZEHAD FOYSAL"
+        android:textColor="#008db9"
+        android:textSize="10dp"
+        android:textStyle="bold|normal"
+        tools:ignore="TextSizeCheck" />
 
 </FrameLayout>

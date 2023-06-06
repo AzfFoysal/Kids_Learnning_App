@@ -4,12 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 
 /**
@@ -27,7 +29,8 @@ public class BanglaAlphaFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    private Button button;
+    private Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11;
     public BanglaAlphaFragment() {
         // Required empty public constructor
     }
@@ -63,23 +66,99 @@ public class BanglaAlphaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_alphabet, container, false);
+        View v = inflater.inflate(R.layout.fragment_bangla_alpha, container, false);
 
-        String[] alpha = new String[65];
-        for(int i=0, j=2437;i<65;i++,j++)
-        {
-            alpha[i] = Character.toString((char)j);
-        }
-
-        GridView gv = v.findViewById(R.id.gridview1);
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_expandable_list_item_1, alpha);
-        gv.setAdapter(adapter);
-
-        gv.setOnItemClickListener((adapterView, view, position, l) -> {
-            Intent i1 = new Intent(getContext(), AlphabetActivity.class);
-            i1.putExtra("name",alpha[position]);
-            startActivity(i1);
+        button1 = (android.widget.Button) v.findViewById(R.id.button1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
         });
+
+        button2 = (android.widget.Button) v.findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+
+        button3 = (android.widget.Button) v.findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+        button4 = (android.widget.Button) v.findViewById(R.id.button4);
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+        button5 = (android.widget.Button) v.findViewById(R.id.button5);
+        button5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+        button6 = (android.widget.Button) v.findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+        button7 = (android.widget.Button) v.findViewById(R.id.button7);
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+        button8 = (android.widget.Button) v.findViewById(R.id.button8);
+        button8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+        button9 = (android.widget.Button) v.findViewById(R.id.button9);
+        button9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+        button10 = (android.widget.Button) v.findViewById(R.id.button10);
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+        button11 = (android.widget.Button) v.findViewById(R.id.button11);
+        button11.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(),BanglaAlphabetActivity.class));
+            }
+        });
+
+
         return v;
     }
+
 }

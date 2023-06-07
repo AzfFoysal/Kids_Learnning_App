@@ -46,5 +46,4 @@ public class BanglaAlphabetActivity extends AppCompatActivity {
         MediaPlayer mp = MediaPlayer.create(getApplicationContext(), mid);
         mp.start();
     }
-
 }

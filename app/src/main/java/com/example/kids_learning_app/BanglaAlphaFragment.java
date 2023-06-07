@@ -69,8 +69,14 @@ public class BanglaAlphaFragment extends Fragment {
         // Inflate the layout for this fragment
         View v = inflater.inflate(R.layout.fragment_bangla_alpha, container, false);
 
-        String alpha[] = {"অ", "আ", "ই", "ঈ", "উ", "ঊ", "ঋ", "এ", "ঐ", "ও", "ঔ",
-                System.getProperty("line.separator"),"ক","খ","গ","ঘ","ঙ","চ","ছ","জ","ঝ","ঞ","ট","ঠ","ড","ঢ","ণ","ত","থ","দ","ধ","ন","প","ফ","ব","ভ","ম","য","র","ল","শ","ষ","স","হ","ড়","ঢ়","য়","ৎ","ং","ঃ","ঁ" };
+        String alpha[] = {
+                System.getProperty("line.separator"),"স্বরবর্ণ",
+                System.getProperty("line.separator"),
+                "অ", "আ", "ই", "ঈ", "উ", "ঊ", "ঋ", "এ", "ঐ", "ও", "ঔ",
+                System.getProperty("line.separator"),
+                System.getProperty("line.separator"),"ব্যঞ্জনবর্ণ",
+                System.getProperty("line.separator"),
+                "ক","খ","গ","ঘ","ঙ","চ","ছ","জ","ঝ","ঞ","ট","ঠ","ড","ঢ","ণ","ত","থ","দ","ধ","ন","প","ফ","ব","ভ","ম","য","র","ল","শ","ষ","স","হ","ড়","ঢ়","য়","ৎ","ং","ঃ","ঁ" };
 
         GridView gv = v.findViewById(R.id.gridview1);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1, alpha);
@@ -81,10 +87,17 @@ public class BanglaAlphaFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Intent il = new Intent(getContext(), BanglaAlphabetActivity.class);
                 il.putExtra("name", alpha[position]);
+
+                boolean itemsLocked = false;
+                if (position < 3 || position > 13 && position < 18) return;
+                itemsLocked = true;
+
                 startActivity(il);
+            
             }
         });
 
         return v;
     }
+
 }

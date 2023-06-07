@@ -19,7 +19,7 @@ public class MyAdapter extends FragmentStateAdapter {
             case 1:
                 return new AlphabetFragment();
             case 2:
-                return new DetailsFragment();
+                return new DrawingCanvasFragment();
         }
 
         return new BanglaAlphaFragment();

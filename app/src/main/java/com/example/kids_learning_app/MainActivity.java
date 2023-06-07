@@ -16,7 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity {
-    String tabTitle[] = {"Bangla Alphabets","English Alphabets","Details"};
+    String tabTitle[] = {"Bangla Alphabets","English Alphabets","Drawing Canvas"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +38,11 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu,menu);
         return true;
     }
+
+
+
+    // MENU
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -67,6 +72,21 @@ public class MainActivity extends AppCompatActivity {
             AlertDialog.Builder alerter = new AlertDialog.Builder(this);
             LayoutInflater factory = LayoutInflater.from(this);
             final View view = factory.inflate(R.layout.fragment_credits, null);
+            alerter.setView(view);
+
+            alerter.setNegativeButton("Back", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int i) {
+                    dialog.cancel();
+                }
+            });
+            alerter.show();
+        }
+        if (id == R.id.details){
+
+            AlertDialog.Builder alerter = new AlertDialog.Builder(this);
+            LayoutInflater factory = LayoutInflater.from(this);
+            final View view = factory.inflate(R.layout.fragment_details, null);
             alerter.setView(view);
 
             alerter.setNegativeButton("Back", new DialogInterface.OnClickListener() {

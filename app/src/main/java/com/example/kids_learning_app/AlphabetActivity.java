@@ -6,6 +6,7 @@ import android.annotation.SuppressLint;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class AlphabetActivity extends AppCompatActivity {
 
@@ -22,7 +23,7 @@ public class AlphabetActivity extends AppCompatActivity {
         int iid = getResources().getIdentifier(name, "drawable",getPackageName());
         iv.setImageResource(iid);
 
-        /*Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();*/
+//        Toast.makeText(getApplicationContext(),name,Toast.LENGTH_LONG).show();
 
         int mid = getResources().getIdentifier(name, "raw",getPackageName());
         MediaPlayer mp = MediaPlayer.create(getApplicationContext(), mid);

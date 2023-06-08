@@ -26,6 +26,7 @@ import java.util.Calendar;
 public class DrawingCanvasActivity extends AppCompatActivity {
 
     private ImageView imageView;
+    private ImageView drawingbackground;
 
     private float floatStartX = -1, floatStartY = -1,
             floatEndX = -1, floatEndY = -1;
@@ -44,14 +45,14 @@ public class DrawingCanvasActivity extends AppCompatActivity {
                         Manifest.permission.WRITE_EXTERNAL_STORAGE},
                 PackageManager.PERMISSION_GRANTED);
 
-        imageView = findViewById(R.id.imageView);
+        drawingbackground = findViewById(R.id.drawingbackground);
     }
 
     private void drawPaintSketchImage(){
 
         if (bitmap == null){
-            bitmap = Bitmap.createBitmap(imageView.getWidth(),
-                    imageView.getHeight(),
+            bitmap = Bitmap.createBitmap(drawingbackground.getWidth(),
+                    drawingbackground.getHeight(),
                     Bitmap.Config.ARGB_8888);
             canvas = new Canvas(bitmap);
             paint.setColor(Color.RED);
@@ -59,12 +60,13 @@ public class DrawingCanvasActivity extends AppCompatActivity {
             paint.setStyle(Paint.Style.STROKE);
             paint.setStrokeWidth(8);
         }
-        canvas.drawLine(floatStartX,
-                floatStartY-580,
-                floatEndX,
-                floatEndY-580,
+        canvas.drawLine(
+                floatStartX-30,
+                floatStartY-450,
+                floatEndX-30,
+                floatEndY-450,
                 paint);
-        imageView.setImageBitmap(bitmap);
+        drawingbackground.setImageBitmap(bitmap);
     }
 
     @Override
@@ -105,5 +107,17 @@ public class DrawingCanvasActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        bitmap = null;
+    }
+    public void resetCanvas(View view){
+        try {
+            Toast.makeText(this,
+                    "Drawing Cleared!",
+                    Toast.LENGTH_LONG).show();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        bitmap = null;
     }
 }

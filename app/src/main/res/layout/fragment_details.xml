@@ -12,13 +12,13 @@
 
     <TextView
         android:id="@+id/TextView"
-        android:layout_width="395dp"
-        android:layout_height="414dp"
+        android:layout_width="403dp"
+        android:layout_height="388dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="178dp"
-        android:layout_marginBottom="11dp"
+        android:layout_marginTop="215dp"
+        android:layout_marginBottom="51dp"
         android:ems="20"
         android:gravity="center_vertical|center_horizontal"
         android:justificationMode="inter_word"
@@ -30,8 +30,8 @@
         android:layout_height="239dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="21dp"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="52dp"
         android:src="@drawable/kids_learning_app" />
     />
 

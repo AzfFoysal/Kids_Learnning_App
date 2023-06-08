@@ -7,28 +7,57 @@
     android:background="#009688"
     tools:context=".DrawingCanvasFragment">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="662dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-59dp"
+        android:src="@drawable/canvasbackground2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/openDrawingBtn"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="48dp"
         android:backgroundTint="#117715"
         android:shadowColor="@color/black"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="130dp"
         android:text="Continue" />
+
+    <Button
+        android:id="@+id/howtoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-10dp"
+        android:backgroundTint="#CC7A03"
+        android:shadowColor="@color/black"
+        android:text="How To Draw ?"
+         />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:outlineAmbientShadowColor="@color/black"
-        android:outlineSpotShadowColor="@color/black"
         android:layout_width="335dp"
         android:layout_height="332dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp"
-        android:layout_marginEnd="34dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="36dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:outlineSpotShadowColor="@color/black"
         android:src="@drawable/drawhere" />
 </RelativeLayout>

@@ -8,30 +8,63 @@
     tools:context=".DrawingCanvasActivity">
 
 
+
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="410dp"
-        android:layout_height="482dp"
+        android:id="@+id/canvasbackground"
+        android:layout_width="wrap_content"
+        android:layout_height="771dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-34dp"
+        android:layout_marginTop="-225dp"
+        android:layout_marginEnd="2dp"
+        app:srcCompat="@drawable/canvasbackground" />
+
+    <ImageView
+        android:id="@+id/drawingbackground"
+        android:layout_width="389dp"
+        android:layout_height="473dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="2dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        app:srcCompat="@drawable/drawingbackground" />
 
     <Button
         android:id="@+id/button"
-        android:backgroundTint="#E19320"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="412dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="7dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="57dp"
+        android:backgroundTint="#009688"
         android:onClick="buttonSaveImage"
         android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="412dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="resetCanvas"
+        android:text="Reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

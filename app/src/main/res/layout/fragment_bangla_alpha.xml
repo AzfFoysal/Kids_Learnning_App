@@ -14,9 +14,26 @@
 
     <GridView
         android:id="@+id/gridview1"
-        android:background="@color/teal_200"
+        android:background="#8BC34A"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:numColumns="3" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/drawingbackground"-->
+<!--        android:layout_width="510dp"-->
+<!--        android:layout_height="941dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginHorizontal="-5dp"-->
+<!--        android:layout_marginStart="-45dp"-->
+<!--        android:layout_marginTop="-750dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:layout_marginBottom="-63dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/canvasbackground" />-->
+
 
 </RelativeLayout>

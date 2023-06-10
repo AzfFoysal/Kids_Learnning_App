@@ -3,13 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".NumberFragment">
+
 
     <GridView
         android:id="@+id/gridview1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:background="@color/teal_200"
-        android:numColumns="3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:numColumns="4"
+        android:layout_marginTop="47dp"
+        tools:ignore="AdapterViewChildren"
+        />
+
+    <ImageView
+            android:id="@+id/numspliterbar"
+            android:layout_width="895dp"
+            android:layout_height="1200dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="-440dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/numspliterbar"
+        />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="414dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="8dp"
+        android:text="             English                              Bangla"
+        android:textSize="20dp"
+        android:background="#8BC34A"
+        />
+
+
 
 </FrameLayout>

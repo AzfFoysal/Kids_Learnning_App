@@ -29,8 +29,7 @@ public class BanglaAlphaFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private Button button;
-    private Button button1, button2, button3, button4, button5, button6, button7, button8, button9, button10, button11;
+
 
     public BanglaAlphaFragment() {
         // Required empty public constructor

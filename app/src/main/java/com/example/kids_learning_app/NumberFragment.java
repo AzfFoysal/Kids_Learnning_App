@@ -67,11 +67,33 @@ public class NumberFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_number, container, false);
 
         String alpha[] = {
-                "1","2","3","4","5","6","7","8","9","10",
-                "11","12","13","14","15","16","17","18","19","20",
-                "21","22","23","24","25","26","27","28","29","30",
-                "31","32","33়","34","35","36","37","38","39","40",
-                "41","42","43","44","45","46","47","48","49","50",};
+                "0","1",    "০","১",
+                "2","3",    "২","৩",
+                "4","5",    "৪","৫",
+                "6","7",    "৬","৭",
+                "8","9",    "৮","৯",
+                "10","11",  "১০","১১",
+                "12","13",  "১২","১৩",
+                "14","15",  "১৪","১৫",
+                "16","17",  "১৬","১৭",
+                "18","19",  "১৮","১৯",
+                "20","21",  "২০","২১",
+                "22","23",  "২২","২৩",
+                "24","25",  "২৪","২৫",
+                "26","27",  "২৬","২৭",
+                "28","29",  "২৮","২৯",
+                "30","31",  "৩০","৩১",
+                "32","33",  "৩২","৩৩",
+                "34","35",  "৩৪","৩৫",
+                "36","37",  "৩৬","৩৭",
+                "38","39",  "৩৮","৩৯",
+                "40","41",  "৪০","৪১",
+                "42","43",  "৪২","৪৩",
+                "44","45",  "৪৪","৪৫",
+                "46","47",  "৪৬","৪৭",
+                "48","49",  "৪৮","৪৯",
+                "50",System.getProperty("line.separator"), "৫০",
+        };
 
         GridView gv = v.findViewById(R.id.gridview1);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1, alpha);
@@ -82,6 +104,11 @@ public class NumberFragment extends Fragment {
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 Intent il = new Intent(getContext(), NumberActivity.class);
                 il.putExtra("name", alpha[position]);
+
+                boolean itemsLocked = false;
+                if (position == 101) return;
+                itemsLocked = true;
+
                 startActivity(il);
 
             }

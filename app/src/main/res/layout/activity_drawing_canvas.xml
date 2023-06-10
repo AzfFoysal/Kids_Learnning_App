@@ -8,10 +8,21 @@
     tools:context=".DrawingCanvasActivity">
 
 
+<!--    <ImageView-->
+<!--        android:id="@+id/canvasbackground"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="771dp"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginStart="-34dp"-->
+<!--        android:layout_marginTop="-225dp"-->
+<!--        android:layout_marginEnd="2dp"-->
+<!--        app:srcCompat="@drawable/canvasbackground" />-->
 
     <ImageView
         android:id="@+id/canvasbackground"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="771dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"

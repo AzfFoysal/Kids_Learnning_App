@@ -16,7 +16,7 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
 public class MainActivity extends AppCompatActivity {
-    String tabTitle[] = {"Bangla Alphabets","English Alphabets","Drawing Canvas"};
+    String tabTitle[] = {"Bangla Alphabets","English Alphabets","Number Learning","Drawing Canvas"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         TabLayout tl = findViewById(R.id.tabLayout);
         ViewPager2 pager = findViewById(R.id.viewPager2);
-        pager.setOffscreenPageLimit(3);
+        pager.setOffscreenPageLimit(4);
         pager.setAdapter(new MyAdapter(getSupportFragmentManager(), getLifecycle()));
 
         TabLayoutMediator tm = new TabLayoutMediator(tl, pager, true,

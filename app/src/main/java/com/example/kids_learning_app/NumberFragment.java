@@ -93,22 +93,19 @@ public class NumberFragment extends Fragment {
         };
 
         GridView gv = v.findViewById(R.id.gridview1);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1, alpha);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_expandable_list_item_1, alpha);
         gv.setAdapter(adapter);
 
-        gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Intent il = new Intent(getContext(), NumberActivity.class);
-                il.putExtra("name", alpha[position]);
+        gv.setOnItemClickListener((adapterView, view, position, id) -> {
+            Intent il = new Intent(getContext(), NumberActivity.class);
+            il.putExtra("name", alpha[position]);
 
-                boolean itemsLocked = false;
-                if (position == 101) return;
-                itemsLocked = true;
+            boolean itemsLocked = false;
+            if (position == 101) return;
+            itemsLocked = true;
 
-                startActivity(il);
+            startActivity(il);
 
-            }
         });
 
         return v;

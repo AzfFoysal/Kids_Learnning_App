@@ -1,7 +1,9 @@
 package com.example.kids_learning_app;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import android.Manifest;
@@ -11,6 +13,8 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.os.Environment;
+import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -41,16 +45,16 @@ public class DrawingCanvasActivity extends AppCompatActivity {
         setContentView(R.layout.activity_drawing_canvas);
 
         ActivityCompat.requestPermissions(this
-                ,new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,
+                , new String[]{Manifest.permission.READ_EXTERNAL_STORAGE,
                         Manifest.permission.WRITE_EXTERNAL_STORAGE},
                 PackageManager.PERMISSION_GRANTED);
 
         drawingbackground = findViewById(R.id.drawingbackground);
     }
 
-    private void drawPaintSketchImage(){
+    private void drawPaintSketchImage() {
 
-        if (bitmap == null){
+        if (bitmap == null) {
             bitmap = Bitmap.createBitmap(drawingbackground.getWidth(),
                     drawingbackground.getHeight(),
                     Bitmap.Config.ARGB_8888);
@@ -61,10 +65,10 @@ public class DrawingCanvasActivity extends AppCompatActivity {
             paint.setStrokeWidth(8);
         }
         canvas.drawLine(
-                floatStartX-30,
-                floatStartY-450,
-                floatEndX-30,
-                floatEndY-450,
+                floatStartX - 30,
+                floatStartY - 450,
+                floatEndX - 30,
+                floatEndY - 450,
                 paint);
         drawingbackground.setImageBitmap(bitmap);
     }
@@ -72,19 +76,19 @@ public class DrawingCanvasActivity extends AppCompatActivity {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 
-        if (event.getAction() == MotionEvent.ACTION_DOWN){
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
             floatStartX = event.getX();
             floatStartY = event.getY();
         }
 
-        if (event.getAction() == MotionEvent.ACTION_MOVE){
+        if (event.getAction() == MotionEvent.ACTION_MOVE) {
             floatEndX = event.getX();
             floatEndY = event.getY();
             drawPaintSketchImage();
             floatStartX = event.getX();
             floatStartY = event.getY();
         }
-        if (event.getAction() == MotionEvent.ACTION_UP){
+        if (event.getAction() == MotionEvent.ACTION_UP) {
             floatEndX = event.getX();
             floatEndY = event.getY();
             drawPaintSketchImage();
@@ -92,7 +96,7 @@ public class DrawingCanvasActivity extends AppCompatActivity {
         return super.onTouchEvent(event);
     }
 
-    public void buttonSaveImage(View view){
+    public void buttonSaveImage(View view) {
         File fileSaveImage = new File(this.getExternalFilesDir(Environment.DIRECTORY_PICTURES),
                 Calendar.getInstance().getTime() + ".jpg");
         try {
@@ -109,7 +113,8 @@ public class DrawingCanvasActivity extends AppCompatActivity {
         }
         bitmap = null;
     }
-    public void resetCanvas(View view){
+
+    public void resetCanvas(View view) {
         try {
             Toast.makeText(this,
                     "Drawing Cleared!",
@@ -120,4 +125,5 @@ public class DrawingCanvasActivity extends AppCompatActivity {
         }
         bitmap = null;
     }
+
 }

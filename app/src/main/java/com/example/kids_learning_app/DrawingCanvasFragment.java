@@ -3,12 +3,15 @@ package com.example.kids_learning_app;
 import static android.widget.Toast.LENGTH_LONG;
 
 import android.annotation.SuppressLint;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
@@ -87,33 +90,33 @@ public class DrawingCanvasFragment extends Fragment {
 
         });
 
-//        View popupView = inflater.inflate(R.layout.popup_layout,null);
-//        final PopupWindow popupWindow = new PopupWindow(popupView, WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+        Button howtoBtn = (Button) v.findViewById(R.id.howtoBtn);
+        howtoBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AlertDialog.Builder PUHelpBuilder = new AlertDialog.Builder(v.getContext());
+//                PUHelpBuilder.setTitle("How To Draw ?");
 
-// define your view here that found in popup_layout
-// for example let consider you have a button
+                LayoutInflater inflater = getLayoutInflater();
+                View DialogLayout = inflater.inflate(R.layout.popup_layout, null);
+                PUHelpBuilder.setView(DialogLayout);
 
-//        Button howtoBtn = (Button) v.findViewById(R.id.howtoBtn);
-//
-//        howtoBtn.setOnClickListener(new View.OnClickListener() {
+                PUHelpBuilder.setPositiveButton("Done", new DialogInterface.OnClickListener() {
 
-//        public void howToDraw ;(View view){
-//            try {
-//                Toast.makeText(this,
-//                        "Drawing Cleared!",
-//                        Toast.LENGTH_LONG).show();
-//
-//            } catch (Exception e) {
-//                e.printStackTrace();
-//            }
+                    @Override
+                    public void onClick(DialogInterface dialog, int which)
+                    {
 
-//        });
+                    }
+                });
 
-            // finally show up your popwindow
+                AlertDialog helpDialog = PUHelpBuilder.create();
+                helpDialog.show();
+
+            }
+        });
 
             return v;
 
-
         }
-
 }

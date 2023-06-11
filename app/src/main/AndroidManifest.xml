@@ -15,7 +15,43 @@
         android:theme="@style/Theme.Kids_Learning_App"
         tools:targetApi="31">
         <activity
-            android:name=".GeneralKnowledgeActivity"
+            android:name=".VehiclesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VegetablesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfessionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PoemsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FlowersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FoodsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FruitsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ColorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BangladeshActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BirdsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AnimalsActivity"
             android:exported="false" />
         <activity
             android:name=".NumberActivity"

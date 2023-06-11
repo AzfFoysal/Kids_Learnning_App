@@ -2,6 +2,7 @@ package com.example.kids_learning_app;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -31,6 +32,7 @@ public class GeneralKnowledgeFragment extends Fragment {
     private String mParam2;
 
     ListView listView;
+    private Drawable knowledgebg;
 
     public GeneralKnowledgeFragment() {
         // Required empty public constructor
@@ -70,7 +72,7 @@ public class GeneralKnowledgeFragment extends Fragment {
         View v = inflater.inflate(R.layout.fragment_general_knowledge, container, false);
 
 
-        String[] topic = {
+        String[] items = {
                 "Animals",
                 "Birds",
                 "Bangladesh",
@@ -86,25 +88,45 @@ public class GeneralKnowledgeFragment extends Fragment {
                 "Vehicles",
                };
 
-        ListView lv = v.findViewById(R.id.listview);
-        lv.setBackgroundColor(Color.GRAY);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1, topic);
+        ListView lv = v.findViewById(R.id.listview);
+        lv.setBackground(knowledgebg);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1, items);
         lv.setAdapter(adapter);
 
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
-                Intent il = new Intent(getContext(), GeneralKnowledgeActivity.class);
-                il.putExtra("name", topic[position]);
-
-
-                startActivity(il);
-
+                if (position == 0) {
+                    startActivity(new Intent(getContext(), AnimalsActivity.class));
+                } else if (position == 1) {
+                    startActivity(new Intent(getContext(), BirdsActivity.class));
+                } else if (position == 2) {
+                    startActivity(new Intent(getContext(), BangladeshActivity.class));
+                } else if (position == 3) {
+                    startActivity(new Intent(getContext(), ColorsActivity.class));
+                } else if (position == 4) {
+                    startActivity(new Intent(getContext(), DressActivity.class));
+                } else if (position == 5) {
+                    startActivity(new Intent(getContext(), FruitsActivity.class));
+                } else if (position == 6) {
+                    startActivity(new Intent(getContext(), FoodsActivity.class));
+                } else if (position == 7) {
+                    startActivity(new Intent(getContext(), FlowersActivity.class));
+                } else if (position == 8) {
+                    startActivity(new Intent(getContext(), FamilyActivity.class));
+                } else if (position == 9) {
+                    startActivity(new Intent(getContext(), PoemsActivity.class));
+                } else if (position == 10) {
+                    startActivity(new Intent(getContext(), ProfessionsActivity.class));
+                } else if (position == 11) {
+                    startActivity(new Intent(getContext(), VegetablesActivity.class));
+                } else if (position == 12) {
+                    startActivity(new Intent(getContext(), VehiclesActivity.class));
+                }
             }
         });
-
-
         return v;
     }
 

@@ -21,6 +21,8 @@ public class MyAdapter extends FragmentStateAdapter {
             case 2:
                 return new NumberFragment();
             case 3:
+                return new GeneralKnowledgeFragment();
+            case 4:
                 return new DrawingCanvasFragment();
         }
 
@@ -29,6 +31,6 @@ public class MyAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 4;
+        return 5;
     }
 }

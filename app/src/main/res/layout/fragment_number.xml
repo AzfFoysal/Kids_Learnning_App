@@ -15,6 +15,9 @@
         android:numColumns="4"
         android:layout_marginTop="47dp"
         tools:ignore="AdapterViewChildren"
+        android:gravity="center|center_horizontal"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
         />
 
     <ImageView

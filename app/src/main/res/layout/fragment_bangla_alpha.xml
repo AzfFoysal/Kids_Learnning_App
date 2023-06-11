@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#CDDC39"
     app:barrierMargin="@dimen/cardview_compat_inset_shadow"
     app:layout_marginBaseline="@dimen/cardview_default_elevation"
     app:layout_goneMarginBaseline="3dp"
@@ -17,7 +16,11 @@
         android:background="#8BC34A"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:numColumns="3" />
+        android:numColumns="3"
+        android:gravity="center|center_horizontal"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        />
 
 <!--    <ImageView-->
 <!--        android:id="@+id/drawingbackground"-->

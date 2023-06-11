@@ -12,5 +12,9 @@
         android:background="#00BCD4"
         android:numColumns="3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:gravity="center|center_horizontal"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="5dp"
+        />
 </RelativeLayout>

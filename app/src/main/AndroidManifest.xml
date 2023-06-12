@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Kids_Learning_App"
         tools:targetApi="31">
         <activity
+            android:name=".BodyFaceActivity"
+            android:exported="false" />
+        <activity
             android:name=".VehiclesActivity"
             android:exported="false" />
         <activity

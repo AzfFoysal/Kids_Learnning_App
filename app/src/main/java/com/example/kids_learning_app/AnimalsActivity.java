@@ -27,11 +27,16 @@ public class AnimalsActivity extends AppCompatActivity {
         viewPager2 = findViewById(R.id.viewpagerimageslider);
 
         List<SliderItem> sliderItems = new ArrayList<>();
-        sliderItems.add(new SliderItem(R.drawable.a));
-        sliderItems.add(new SliderItem(R.drawable.b));
-        sliderItems.add(new SliderItem(R.drawable.c));
-        sliderItems.add(new SliderItem(R.drawable.d));
-        sliderItems.add(new SliderItem(R.drawable.e));
+        sliderItems.add(new SliderItem(R.drawable.a1));
+        sliderItems.add(new SliderItem(R.drawable.a2));
+        sliderItems.add(new SliderItem(R.drawable.a3));
+        sliderItems.add(new SliderItem(R.drawable.a4));
+        sliderItems.add(new SliderItem(R.drawable.a5));
+        sliderItems.add(new SliderItem(R.drawable.a6));
+        sliderItems.add(new SliderItem(R.drawable.a7));
+        sliderItems.add(new SliderItem(R.drawable.a8));
+        sliderItems.add(new SliderItem(R.drawable.a9));
+
 
         viewPager2.setAdapter(new SliderAdapter(sliderItems, viewPager2));
 
@@ -56,7 +61,7 @@ public class AnimalsActivity extends AppCompatActivity {
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
                 sliderHandler.removeCallbacks(sliderRunnable);
-                sliderHandler.postDelayed(sliderRunnable, 3000);
+                sliderHandler.postDelayed(sliderRunnable, 8000);
             }
         });
     }

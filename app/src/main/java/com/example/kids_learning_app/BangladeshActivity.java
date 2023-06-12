@@ -30,11 +30,10 @@ public class BangladeshActivity extends AppCompatActivity {
         viewPager2 = findViewById(R.id.viewpagerimageslider);
 
         List<SliderItem> sliderItems = new ArrayList<>();
-        sliderItems.add(new SliderItem(R.drawable.a));
-        sliderItems.add(new SliderItem(R.drawable.b));
-        sliderItems.add(new SliderItem(R.drawable.c));
-        sliderItems.add(new SliderItem(R.drawable.d));
-        sliderItems.add(new SliderItem(R.drawable.e));
+        sliderItems.add(new SliderItem(R.drawable.bd1));
+        sliderItems.add(new SliderItem(R.drawable.bd2));
+        sliderItems.add(new SliderItem(R.drawable.bd3));
+
 
         viewPager2.setAdapter(new SliderAdapter(sliderItems, viewPager2));
 

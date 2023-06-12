@@ -76,6 +76,7 @@ public class GeneralKnowledgeFragment extends Fragment {
                 "Animals",
                 "Birds",
                 "Bangladesh",
+                "Body & Face",
                 "Colors",
                 "Dress",
                 "Fruits",
@@ -105,24 +106,26 @@ public class GeneralKnowledgeFragment extends Fragment {
                 } else if (position == 2) {
                     startActivity(new Intent(getContext(), BangladeshActivity.class));
                 } else if (position == 3) {
-                    startActivity(new Intent(getContext(), ColorsActivity.class));
+                    startActivity(new Intent(getContext(), BodyFaceActivity.class));
                 } else if (position == 4) {
-                    startActivity(new Intent(getContext(), DressActivity.class));
+                    startActivity(new Intent(getContext(), ColorsActivity.class));
                 } else if (position == 5) {
-                    startActivity(new Intent(getContext(), FruitsActivity.class));
+                    startActivity(new Intent(getContext(), DressActivity.class));
                 } else if (position == 6) {
-                    startActivity(new Intent(getContext(), FoodsActivity.class));
+                    startActivity(new Intent(getContext(), FruitsActivity.class));
                 } else if (position == 7) {
-                    startActivity(new Intent(getContext(), FlowersActivity.class));
+                    startActivity(new Intent(getContext(), FoodsActivity.class));
                 } else if (position == 8) {
-                    startActivity(new Intent(getContext(), FamilyActivity.class));
+                    startActivity(new Intent(getContext(), FlowersActivity.class));
                 } else if (position == 9) {
-                    startActivity(new Intent(getContext(), PoemsActivity.class));
+                    startActivity(new Intent(getContext(), FamilyActivity.class));
                 } else if (position == 10) {
-                    startActivity(new Intent(getContext(), ProfessionsActivity.class));
+                    startActivity(new Intent(getContext(), PoemsActivity.class));
                 } else if (position == 11) {
-                    startActivity(new Intent(getContext(), VegetablesActivity.class));
+                    startActivity(new Intent(getContext(), ProfessionsActivity.class));
                 } else if (position == 12) {
+                    startActivity(new Intent(getContext(), VegetablesActivity.class));
+                } else if (position == 13) {
                     startActivity(new Intent(getContext(), VehiclesActivity.class));
                 }
             }

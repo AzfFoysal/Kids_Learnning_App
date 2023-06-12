@@ -1,6 +1,7 @@
 package com.example.kids_learning_app;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -29,6 +30,7 @@ public class BanglaAlphaFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private Drawable knowledgebg;
 
 
     public BanglaAlphaFragment() {
@@ -78,6 +80,8 @@ public class BanglaAlphaFragment extends Fragment {
                 "ক","খ","গ","ঘ","ঙ","চ","ছ","জ","ঝ","ঞ","ট","ঠ","ড","ঢ","ণ","ত","থ","দ","ধ","ন","প","ফ","ব","ভ","ম","য","র","ল","শ","ষ","স","হ","ড়","ঢ়","য়","ৎ","ং","ঃ","ঁ" };
 
         GridView gv = v.findViewById(R.id.gridview1);
+//        gv.setBackground(knowledgebg);
+        
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_expandable_list_item_1, alpha);
         gv.setAdapter(adapter);
 
@@ -92,7 +96,7 @@ public class BanglaAlphaFragment extends Fragment {
                 itemsLocked = true;
 
                 startActivity(il);
-            
+
             }
         });
 
